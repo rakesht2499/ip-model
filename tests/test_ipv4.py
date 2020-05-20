@@ -17,7 +17,7 @@ class TestIpv4:
         assert self.tree.is_present(self.ip1) is True
         assert self.tree.is_present(self.ip2) is False
         assert self.tree.is_present(self.ip3) is False
-        assert self.tree.is_present("192.1.2.45") is False
+        assert self.tree.is_present("192.1.2.45") is True
 
     def test_add_ip2(self):
         assert self.tree.add(self.ip2)
